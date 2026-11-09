@@ -1,0 +1,495 @@
+
+/* =========================================
+   LOREDELIVERY - CADASTRO
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #090909;
+    color: white;
+    min-height: 100vh;
+}
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+header {
+    background-color: #111111;
+    min-height: 85px;
+    padding: 5px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #ff781f;
+}
+
+header img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.espacoB {
+    padding-left: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #ff781f;
+}
+
+/* =========================================
+   FUNDO E CENÁRIO
+========================================= */
+
+.container {
+    min-height: calc(100vh - 85px);
+    padding: 55px 5% 35px;
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 8, 8, .97) 0%,
+            rgba(8, 8, 8, .80) 48%,
+            rgba(8, 8, 8, .35) 100%
+        ),
+        url("midia/cidade-noturna.png") center bottom / cover no-repeat,
+        #111;
+}
+
+/* Faixa diagonal laranja */
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background:
+        linear-gradient(
+            135deg,
+            transparent 0 65%,
+            rgba(255, 120, 31, .15) 65% 68%,
+            transparent 68%
+        );
+
+    pointer-events: none;
+}
+
+/* =========================================
+   ORGANIZAÇÃO PRINCIPAL
+========================================= */
+
+.formulario {
+    max-width: 1250px;
+    min-height: 750px;
+    margin: auto;
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr) 410px;
+
+    grid-template-rows: max-content max-content;
+
+    grid-template-areas:
+        "texto card"
+        "texto login";
+
+    column-gap: 45px;
+    row-gap: 14px;
+
+    align-items: start;
+}
+
+/* =========================================
+   TEXTO E IMAGENS PRINCIPAIS
+========================================= */
+
+.texto {
+    grid-area: texto;
+    position: relative;
+    min-height: 690px;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+/* Imagem do entregador */
+
+.pagina-entregador .texto::before {
+    content: "";
+    position: absolute;
+
+    width: 55%;
+    height: 370px;
+
+    right: -15px;
+    top: 0;
+
+    background:
+        url("midia/entregador.png")
+        center bottom / contain no-repeat;
+
+    z-index: -1;
+}
+
+/* Imagem das encomendas */
+
+.pagina-cliente .texto::before {
+    content: "";
+    position: absolute;
+
+    width: 58%;
+    height: 360px;
+
+    right: -15px;
+    top: 20px;
+
+    background:
+        url("midia/caixas-entrega.png")
+        center bottom / contain no-repeat;
+
+    z-index: -1;
+}
+
+/* =========================================
+   ETIQUETA LARANJA
+========================================= */
+
+.etiqueta {
+    display: inline-block;
+
+    background: #ff781f;
+    color: #080808;
+
+    padding: 7px 15px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .5px;
+
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   TÍTULO PRINCIPAL
+========================================= */
+
+.texto h1 {
+    max-width: 570px;
+
+    font-size: clamp(42px, 5vw, 64px);
+    line-height: .98;
+
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -2px;
+
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+.texto h1 span {
+    display: block;
+    color: #ff781f;
+}
+
+/* =========================================
+   DESCRIÇÃO
+========================================= */
+
+.texto > p {
+    max-width: 430px;
+
+    color: #f0f0f0;
+    font-size: 16px;
+    line-height: 1.45;
+
+    text-shadow: 1px 2px 5px black;
+}
+
+/* =========================================
+   QUADRO DECORATIVO
+========================================= */
+
+.texto::after {
+    content: "Mais oportunidades,\A mais conquistas!";
+
+    white-space: pre-line;
+
+    position: absolute;
+
+    left: 0;
+    top: 420px;
+
+    width: 260px;
+    height: 170px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(12, 12, 12, .92);
+
+    border: 2px solid #ff781f;
+    border-radius: 18px;
+
+    color: white;
+    font-size: 21px;
+    font-weight: 900;
+    font-style: italic;
+
+    transform: rotate(-4deg);
+
+    box-shadow: 0 5px 20px rgba(255, 120, 31, .18);
+}
+
+/* Texto diferente no quadro do cliente */
+
+.pagina-cliente .texto::after {
+    content: "Entrega segura,\A rápida e prática!";
+}
+
+/* =========================================
+   CARTÃO DE CADASTRO
+========================================= */
+
+.card {
+    grid-area: card;
+
+    width: 100%;
+
+    background: rgba(15, 15, 15, .97);
+
+    border: 2px solid #ff781f;
+    border-radius: 19px;
+
+    padding: 25px 25px 20px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .6),
+        0 0 15px rgba(255, 120, 31, .15);
+
+    position: relative;
+    z-index: 2;
+}
+
+.card h2 {
+    font-size: 29px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.card .subtitulo {
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* =========================================
+   LABELS E INPUTS
+========================================= */
+
+.card label {
+    display: block;
+    color: #eee;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    margin: 12px 0 6px;
+}
+
+.card input,
+.login input {
+    width: 100%;
+    height: 41px;
+
+    background: #252525;
+
+    border: 1px solid #383838;
+    border-radius: 8px;
+
+    padding: 0 13px;
+
+    color: white;
+    font-size: 13px;
+
+    outline: none;
+    transition: .3s;
+}
+
+.card input::placeholder,
+.login input::placeholder {
+    color: #bdbdbd;
+}
+
+.card input:focus,
+.login input:focus {
+    border-color: #ff781f;
+    box-shadow: 0 0 7px rgba(255, 120, 31, .3);
+}
+
+/* =========================================
+   BOTÕES
+========================================= */
+
+.card button,
+.login button {
+    width: 100%;
+    height: 43px;
+
+    background: #ff781f;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: .3s;
+
+    margin-top: 16px;
+}
+
+.card button:hover,
+.login button:hover {
+    background: #fff;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MENSAGEM
+========================================= */
+
+#mensagem {
+    color: #ff781f;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* =========================================
+   LOGIN
+========================================= */
+
+.login {
+    grid-area: login;
+
+    width: 100%;
+
+    background: rgba(15, 15, 15, .97);
+
+    border: 2px solid #ff781f;
+    border-radius: 19px;
+
+    padding: 20px 25px 22px;
+
+    margin-top: 0;
+
+    position: relative;
+    z-index: 2;
+}
+
+.login h3 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.login input {
+    margin-bottom: 5px;
+}
+
+.login button {
+    margin-top: 5px;
+}
+
+#plataforma {
+    text-align: center;
+    color: #ff781f;
+    margin-top: 12px;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        padding: 40px 4%;
+    }
+
+    .formulario {
+        grid-template-columns: minmax(0, 1fr) 360px;
+        column-gap: 25px;
+    }
+
+    .texto h1 {
+        font-size: 45px;
+    }
+}
+
+
+.btn {
+    width: 400px;
+    height: 50px;
+
+    background: #ff781f;
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 900;
+
+    cursor: pointer;
+    transition: .3s;
+
+    margin-top: 16px;
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: #000000;
+    transform: translateY(-2px);
+}
+
+.espacoC {
+    padding-left: 805px;
+}

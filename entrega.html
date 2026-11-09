@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lore Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="entrega.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html">
+        <img src="midia/LoreDelivery LOGO CORTE.png" alt="loredelivery logo"></a>
+        <div class="menu">
+        <a href="index.html">Ínicio</a>
+        <a href="" class="espacoB">Sobre</a>
+        <a href="cadastroentregador.html" class="espacoB">Entregadores</a>
+        </div>
+    </header>
+
+    <!--!!!!!!!!!!!!!!!!-->
+
+    <main class="container">
+
+        <h2>Solicitar uma entrega</h2>
+        <p class="subtitulo">
+            Preencha os dados abaixo para solicitar sua entrega.
+        </p>
+
+        <form id="formEntrega">
+
+            <section class="formulario">
+
+                <h3>📦 Informações de retirada</h3>
+
+                <div class="campo">
+                    <label for="nomeEnvio">Nome de quem vai enviar</label>
+                    <input type="text" id="nomeEnvio" required
+                        placeholder="Digite o nome do remetente">
+                </div>
+
+                <div class="campo">
+                    <label for="telefoneEnvio">Número de telefone</label>
+                    <input type="tel" id="telefoneEnvio" required
+                        placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="campo">
+                    <label for="enderecoEnvio">Endereço de retirada</label>
+                    <input type="text" id="enderecoEnvio" required
+                        placeholder="Rua, bairro e cidade">
+                </div>
+
+                <div class="campo">
+                    <label for="numeroEnvio">Número da casa/apartamento</label>
+                    <input type="text" id="numeroEnvio" required
+                        placeholder="Número ou complemento">
+                </div>
+
+            </section>
+
+            <section class="formulario">
+
+                <h3>📍 Informações de entrega</h3>
+
+                <div class="campo">
+                    <label for="nomeRecebe">Nome de quem vai receber</label>
+                    <input type="text" id="nomeRecebe" required
+                        placeholder="Digite o nome do destinatário">
+                </div>
+
+                <div class="campo">
+                    <label for="telefoneRecebe">Número de telefone</label>
+                    <input type="tel" id="telefoneRecebe" required
+                        placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="campo">
+                    <label for="enderecoRecebe">Endereço de entrega</label>
+                    <input type="text" id="enderecoRecebe" required
+                        placeholder="Rua, bairro e cidade">
+                </div>
+
+                <div class="campo">
+                    <label for="numeroRecebe">Número da casa/apartamento</label>
+                    <input type="text" id="numeroRecebe" required
+                        placeholder="Número ou complemento">
+                </div>
+
+            </section>
+
+            <button type="submit" class="botao-confirmar">
+                Confirmar entrega
+            </button>
+
+        </form>
+
+        <div id="resultado" class="resultado" hidden>
+            <h3>✅ Entrega confirmada!</h3>
+
+            <p>Sua solicitação foi registrada com sucesso.</p>
+
+            <p class="codigo">
+                Código de rastreio do pedido:
+            </p>
+
+            <strong id="codigoRastreio"></strong>
+
+            <p class="aviso">
+                Guarde esse código para acompanhar sua entrega!
+            </p>
+        </div>
+
+    </main>
+
+</body>
+</html>

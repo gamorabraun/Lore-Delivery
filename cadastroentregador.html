@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Entregador | LoreDelivery</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+        <img src="midia/LoreDelivery LOGO CORTE.png" alt="loredelivery logo" width="200px"></a>
+        <div class="menu">
+        <a href="index.html">Ínicio</a>
+        <a href="" class="espacoB">Sobre</a>
+        <a href="cadastroentregador.html" class="espacoB">Entregadores</a>
+        </div>
+    </header>
+
+
+    <main class="container">
+        <section class="formulario">
+            <div class="texto">
+                <span class="etiqueta">FAÇA PARTE DA NOSSA EQUIPE</span>
+                <h1>Seja um <span>entregador!</span></h1>
+                <p>
+                    Cadastre-se na LoreDelivery e faça parte de uma equipe
+                    que conecta pessoas e entrega possibilidades.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Crie sua conta</h2>
+                <p class="subtitulo">Preencha seus dados para começar.</p>
+
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail">
+
+                <label for="usuario">Nome de usuário</label>
+                <input type="text" id="usuario" placeholder="Crie um usuário">
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Crie uma senha">
+
+                <button onclick="cadastrar()">Quero me cadastrar</button>
+
+                <p id="mensagem"></p>
+            </div>
+
+            <div class="login">
+                <h3>Já possui uma conta?</h3>
+                <input type="text" id="loginUsuario" placeholder="Nome de usuário">
+                <input type="password" id="loginSenha" placeholder="Sua senha">
+                <button onclick="entrar()">Entrar</button>
+                <div id="plataforma" style="display: none;">
+                    <p>Bem-vindo à LoreDelivery!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
