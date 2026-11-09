@@ -1,0 +1,1182 @@
+
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #111111;
+    color: #222222;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+    background-color: #111111;
+    min-height: 85px;
+    padding: 5px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 4px solid #ff781f;
+}
+
+header img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.espacoB {
+    padding-left: 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #ff781f;
+}
+
+/* ==============================
+   ESTRUTURA PRINCIPAL
+============================== */
+
+main {
+    background-color: #111111;
+}
+
+.espacoA {
+    padding-top: 20px;
+    background-color: #111111;
+}
+
+/* ==============================
+   APRESENTAÇÃO / SLOGAN
+============================== */
+
+.slogan {
+    display: flex;
+    gap: 45px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 6% 65px;
+    background-color: #111111;
+    color: white;
+    min-height: 440px;
+}
+
+.texto {
+    max-width: 500px;
+}
+
+h1 {
+    padding-top: 0;
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+}
+
+span {
+    color: #ff781f;
+}
+
+.texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #d1d1d1;
+    margin-top: 12px;
+}
+
+.motoboy img {
+    width: 570px;
+    max-width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+/* ==============================
+   QUADRO 1 - CATEGORIAS
+============================== */
+
+.categorias {
+    background-color: #f1f3f5;
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.categorias h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    color: #111111;
+}
+
+.cards-categorias {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    background-color: white;
+    min-height: 180px;
+    min-width: 200px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    border-bottom: 5px solid #ff781f;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.categoria svg {
+    width: 38px;
+    height: 38px;
+    fill: none;
+    stroke: #ff781f;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.categoria p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.categoria:hover {
+    transform: translateY(-8px);
+    background-color: #111111;
+    border-bottom-color: white;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+}
+
+.categoria:hover p {
+    color: white;
+}
+
+/* ==============================
+   QUADRO 2 - BENEFÍCIOS
+============================== */
+
+.beneficios {
+    background-color: #ff781f;
+    padding: 55px 35px;
+    text-align: center;
+}
+
+.beneficios h2 {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #111111;
+    margin-bottom: 35px;
+}
+
+.lista-beneficios {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lista-beneficios p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #111111;
+    color: white;
+    padding: 22px 28px;
+    min-width: 190px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.lista-beneficios p:hover {
+    transform: translateY(-6px);
+    background-color: #292929;
+}
+
+.lista-beneficios svg {
+    width: 23px;
+    height: 23px;
+    fill: none;
+    stroke: #ff781f;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+/* ==============================
+   QUADRO 3 - SOBRE A LOREDELIVERY
+============================== */
+
+.sobre-lore {
+    padding: 70px 35px;
+    text-align: center;
+    background-color: #151515;
+}
+
+.sobre-lore h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    color: #c9c9c9;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* ==============================
+   CARDS
+============================== */
+
+.cards-sobre {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card-sobre {
+    background-color: #242424;
+    width: 400px;
+    padding: 38px 30px;
+    border-radius: 15px;
+    border: 1px solid #393939;
+    border-top: 5px solid #ff781f;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+.card-sobre:hover {
+    transform: translateY(-9px);
+    border-color: #ff781f;
+    box-shadow: 0 12px 30px rgba(255, 120, 31, 0.15);
+}
+
+/* ==============================
+   ÍCONES
+============================== */
+
+.icone-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto 22px;
+}
+
+.icone-sobre svg {
+    width: 42px;
+    height: 42px;
+    fill: none;
+    stroke: #ff781f;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ==============================
+   TÍTULOS E TEXTOS DOS CARDS
+============================== */
+
+.card-sobre h3 {
+    color: #ff781f;
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.card-sobre p {
+    color: #e0e0e0;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* ==============================
+   BOTÕES
+============================== */
+
+.btnSeja {
+    background-color: #ff781f;
+    color: #111111;
+    border: 2px solid #ff781f;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnFaca {
+    background-color: #111111;
+    color: white;
+    border: 2px solid #ff781f;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnFaca:hover {
+    background-color: #ff781f;
+    color: #111111;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 120, 31, 0.25);
+}
+
+.btnSeja:hover {
+    background-color: white;
+    color: #111111;
+    border-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer {
+    background-color: #080808;
+    color: #e8edf3;
+    text-align: center;
+    padding: 0px 20px;
+    border-top: 4px solid #ff781f;
+}
+
+footer h3 {
+    color: #ff781f;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+
+/*RASTREIE SEU PEDIDO ------- CÓDIGO DE RASTREIO*/
+/* ÁREA DE RASTREAMENTO */
+.rastreamento {
+    width: 85%;
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 30px 40px;
+
+    background: #fff8f1;
+    border: 1px solid #f3dfcc;
+    border-radius: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    box-shadow: 0 5px 18px rgba(136, 116, 116, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.rastreamento:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.10);
+}
+
+/* ÍCONE */
+.icone-rastreamento {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+
+    background: #ffe1c4;
+    color: #ed791b;
+
+    border-radius: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+/* TEXTOS */
+.texto-rastreamento {
+    flex: 1;
+}
+
+.texto-rastreamento h2 {
+    color: #242424;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.texto-rastreamento p {
+    color: #777;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* BOTÃO */
+.btn-rastreamento {
+    background-color: #ff781f;
+    color: #000000;
+    border: 2px solid #ff781f;
+    padding: 14px 22px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-rastreamento:hover {
+   background-color: #000000;
+    color: #ffffff;
+    border-color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 750px) {
+    .rastreamento {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .texto-rastreamento h2 {
+        font-size: 21px;
+    }
+
+    .btn-rastreamento {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/*----------QUADRO DE "ACOMPANHE O SEU PEDIDO-----------*/
+/* ÁREA DE RASTREAMENTO */
+
+.area-rastreamento {
+    width: 85%;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 45px 50px;
+
+    background: #fffaf5;
+    border: 1px solid #f1e2d4;
+    border-radius: 20px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+}
+
+
+/* CABEÇALHO */
+.cabecalho-rastreamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icone-pacote {
+    width: 75px;
+    height: 75px;
+
+    background: #ffe7d1;
+    color: #ed791b;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cabecalho-rastreamento span {
+    color: #ed791b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.cabecalho-rastreamento h2 {
+    color: #222;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.cabecalho-rastreamento p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+/* CAMPO DE PESQUISA */
+.campo-rastreamento {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+}
+
+.campo-rastreamento label {
+    display: block;
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.input-rastreamento {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    background: white;
+    border: 1px solid #e5d8cd;
+    border-radius: 10px;
+
+    padding: 0 16px;
+    height: 55px;
+
+    transition: 0.3s;
+}
+
+.input-rastreamento:focus-within {
+    border-color: #f28a24;
+    box-shadow: 0 0 0 3px rgba(242, 138, 36, 0.12);
+}
+
+.input-rastreamento i {
+    color: #ed791b;
+    font-size: 19px;
+}
+
+.input-rastreamento input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #333;
+    font-size: 14px;
+}
+
+.input-rastreamento input::placeholder {
+    color: #aaa;
+}
+
+/* BOTÃO */
+.botao-rastrear {
+    width: 100%;
+    margin-top: 15px;
+
+    padding: 16px;
+
+    background: #f28a24;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: 0.3s ease;
+}
+
+.botao-rastrear:hover {
+    background: #d96e12;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(242, 138, 36, 0.25);
+}
+
+/* RODAPÉ */
+.rodape-rastreamento {
+    margin-top: 25px;
+
+    color: #999;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.rodape-rastreamento i {
+    color: #ed791b;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    .area-rastreamento {
+        width: 92%;
+        padding: 30px 20px;
+    }
+
+    .cabecalho-rastreamento h2 {
+        font-size: 24px;
+    }
+
+    .cabecalho-rastreamento p {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+/*----------------------RASTREIO DO PEDIDO---------------------*/
+/* RESULTADO DO RASTREAMENTO */
+
+.resultado-rastreamento {
+    width: 85%;
+    max-width: 1000px;
+    margin: 70px auto;
+}
+
+.titulo-rastreamento {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.titulo-rastreamento span {
+    color: #ed791b;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-rastreamento h2 {
+    color: #000000;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.titulo-rastreamento p {
+    color: #777;
+    font-size: 15px;
+}
+
+/* CARTÃO PRINCIPAL */
+.card-rastreamento {
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* INFORMAÇÕES DO PEDIDO */
+.info-pedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-pedido span {
+    color: #999;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.info-pedido h3 {
+    color: #222;
+    font-size: 23px;
+    margin-top: 8px;
+}
+
+.status-entrega {
+    background: #fff0df;
+    color: #e77b1c;
+    padding: 11px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.linha-divisoria {
+    height: 1px;
+    background: #eeeeee;
+    margin: 25px 0;
+}
+
+/* ETAPAS DA ENTREGA */
+.etapas-entrega {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.etapa {
+    display: flex;
+    gap: 18px;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.etapa:last-child {
+    padding-bottom: 0;
+}
+
+/* LINHA VERTICAL */
+.etapa:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 45px;
+    height: calc(100% - 45px);
+    border-left: 2px dashed #dddddd;
+}
+
+.etapa.concluida:not(:last-child)::after {
+    border-color: #f28a24;
+}
+
+/* ÍCONES */
+.icone-etapa {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+
+    background: #eeeeee;
+    color: #999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 16px;
+    z-index: 1;
+}
+
+.etapa.concluida .icone-etapa {
+    background: #f28a24;
+    color: white;
+}
+
+.etapa.atual .icone-etapa {
+    background: #fff0df;
+    color: #ed791b;
+    border: 2px solid #f28a24;
+    box-shadow: 0 0 0 5px #fff5eb;
+}
+
+/* TEXTOS DAS ETAPAS */
+
+.texto-etapa h4 {
+    color: #333;
+    font-size: 16px;
+    margin: 2px 0 6px;
+}
+
+.texto-etapa p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.texto-etapa span {
+    color: #aaa;
+    font-size: 11px;
+}
+
+.etapa.atual .texto-etapa h4 {
+    color: #e77b1c;
+}
+
+/* AVISO */
+
+.aviso-rastreamento {
+    background: #fff8f1;
+    color: #8c694d;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 12px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .resultado-rastreamento {
+        width: 92%;
+    }
+
+    .card-rastreamento {
+        padding: 22px;
+    }
+
+    .info-pedido {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .titulo-rastreamento h2 {
+        font-size: 24px;
+    }
+
+}
+
+
+/* ==============================
+   RESPONSIVIDADE
+============================== */
+
+@media (max-width: 900px) {
+
+    .slogan {
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .motoboy img {
+        width: 400px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header img {
+        width: 160px;
+    }
+
+    .menu {
+        padding: 10px 0;
+        gap: 18px;
+    }
+
+    .slogan {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .motoboy img {
+        width: 100%;
+        height: auto;
+    }
+
+    .categorias h2,
+    .beneficios h2,
+    .sobre-lore h2 {
+        font-size: 25px;
+    }
+
+    .categoria {
+        min-width: 140px;
+        min-height: 150px;
+    }
+
+    .lista-beneficios p {
+        width: 100%;
+    }
+
+    .sobre-lore {
+        padding: 50px 20px;
+    }
+
+    .card-sobre {
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
+
+
+
+/*----------------ENTREGA OFICIAL----------------*/
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* CABEÇALHO */
+
+.topo {
+    background: #171717;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.topo h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.topo h1 span {
+    color: #f47721;
+}
+
+.topo p {
+    margin-bottom: 0;
+    color: #ddd;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.container {
+    width: 85%;
+    max-width: 750px;
+    margin: 40px auto;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+/* QUADROS DOS FORMULÁRIOS */
+
+.formulario {
+    background: #fafafa;
+    border: 1px solid #e7e7e7;
+    border-left: 5px solid #f47721;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.formulario h3 {
+    color: #f47721;
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.campo input {
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input:focus {
+    border-color: #f47721;
+    box-shadow: 0 0 5px rgba(244,119,33,0.25);
+}
+
+/* BOTÃO */
+
+.botao-confirmar {
+    width: 100%;
+    padding: 16px;
+    background: #f47721;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao-confirmar:hover {
+    background: #d95f0d;
+    transform: translateY(-2px);
+}
+
+/* RESULTADO DA ENTREGA */
+
+.resultado {
+    margin-top: 30px;
+    padding: 25px;
+    background: #fff7f0;
+    border: 1px solid #f47721;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.resultado h3 {
+    color: #258443;
+    font-size: 23px;
+}
+
+.codigo {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+#codigoRastreio {
+    display: block;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: #f47721;
+    margin: 15px 0;
+}
+
+.aviso {
+    font-size: 13px;
+    color: #777;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 85%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .container h2 {
+        font-size: 23px;
+    }
+
+    .formulario {
+        padding: 18px;
+    }
+
+    #codigoRastreio {
+        font-size: 21px;
+    }
+}
